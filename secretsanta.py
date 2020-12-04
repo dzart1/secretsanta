@@ -8,7 +8,7 @@ participants_e_mail = ["E-Mail Name 1", "E-Mail Name 2", "E-Mail Name 3", "E-Mai
                        "E-Mail Name 5", "E-Mail Name 6"]
 targets = ["Name 1", "Name 2", "Name 3", "Name 4", "Name 5", "Name 6"]
 
-# function for mailing, i chose gmail a provider, however, look up smtplib documentation for other providers
+# function for mailing, i chose gmail as provider, however, look up smtplib documentation for other providers
 def sendmail(sender_mail, sender_pw, chosen_mail, target):
     with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
         smtp.ehlo()
